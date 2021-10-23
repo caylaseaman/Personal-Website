@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+  <style>
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+      background-color: #E8E3D8;
+      /* #122220; */
+      color: black;
+      background-repeat: repeat;
+      background-size: 70%;
+      padding-bottom: 20px;
+      padding-top: 70px;
+      font-family: 'Noto Serif Display', serif;
+      
+    }
+
+    .imageContainer {
+      /* margin-right: 20px; */
+      height: 500px;
+      width: 500px;
+      margin: 100px 100px 0px 0px;
+    }
+
+    img {
+      border-radius: 50% 50% 0 0;
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      height: 100vh;
+
+    }
+
+    .text {
+      width: 55%;
+    }
+
+    .header {
+      margin: 200px 0px 0px 150px;
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .aboutTxt {
+      margin-left: 150px;
+      font-size:22px;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0; 
+      margin: 0 auto;
+      width: 100%;
+      height: 4rem;
+      z-index: 10;
+      background-color: #E8E3D8;
+
+      border-bottom: 2px solid black;
+    }
+
+    .nav li,
+    .footer li {
+      list-style-type: none;
+      text-decoration: none;
+      padding: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <!-- <li><a href="default.asp">Work</a></li> -->
+      <!-- <li><a href="news.asp">About</a></li> -->
+      <!-- <li><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:93730ed8-cb05-4491-9f93-a68c16dc2d67">Resume</a></li> -->
+      <!-- <li><a href="Assets/CaylaSeaman.pdf" target="_blank">Resume</a></li> -->
+      <!-- <li><a href="temp.html">New</a></li> -->
+      <li style="float:right; padding-right:20px"><a href="mailto: caylaseaman@gmail.com" target="_blank"><img
+            src="https://img.icons8.com/material-rounded/30/000000/new-post.png" /></a></li>
+      <li style="float:right"><a href="https://www.linkedin.com/in/caylaseaman/" target="_blank"><img
+            src="https://img.icons8.com/material-rounded/30/000000/linkedin.png" /></a></li>
+      <li style="float:right"><a href="https://github.com/caylaseaman" target="_blank"><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/github-2.png" /></a></li>
+    </ul>
+
+  </div>
+  <div class="columns about">
+    <div class="column text">
+      <h1 class="header">Hi, I'm Cayla.</h1>
+      <p class="aboutTxt">I recently graduated from <b>Purdue University</b> with a major in Computer Science as well as
+        a minor in Innovation and
+        Transformational Change. Currently, I'm working as a <b>Software Consultant</b> for <b>Pariveda Solutions</b>.
+      </p>
+    </div>
+
+    <div class="column imageContainer">
+      <img src="Assets/cayla.jpg" alt="Avatar">
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.topnav {
+  float: right;
+  padding-right: 118px;
+  margin-top: 23px;
+  color: white;
+
+}
+.header h1 {
+  color: white;
+  float: left;
+  font-weight: normal;
+  font-family:  "Courier New", Courier, monospace;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+.header h2 {
+  color: white;
+  float: left;
+  font-weight: normal;
+  font-family:  "Courier New", Courier, monospace;
+  margin-top: 100px;
+}
+.topnav a.active {
+  color: white;
+  font-size: 17px;
+  padding: 16px;
+  text-decoration :none;
+  font-family:  "Courier New", Courier, monospace;
+}
+.fill {
+	margin-top: 0px;
+	height: 700px;
+	width: 100%;
+ /* background-image: url('IMG_4182.JPG');-->
+  
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+    overflow: scroll;*/
+}
+body {
+ background-color: black;
+ 
+}

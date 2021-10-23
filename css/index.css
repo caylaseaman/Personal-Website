@@ -1,0 +1,712 @@
+
+:root {
+  --background: #ffffff;
+  --text: #0a0808;
+  /* --accent1: rgb(233, 222, 241); */
+  --accent1: #B7B7A4;
+  --accent2: #FFF1E6;
+  --accent3: #F0EFEB;
+  --accent4: #EDDCD2;
+
+  --accent5: #DDBEA9;
+  --accent6: #7e7e6b;
+   /* rgb(126, 126, 107); */
+  --accent7: #CB997E;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  background-repeat: repeat;
+  background-size: 70%;
+  padding-bottom: 20px;
+  padding-top: 70px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  
+}
+
+ul {
+  list-style-type: circle;
+  font-weight: 100;
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem; 
+  background-color: var(--accent3);
+  z-index: 10;
+}
+
+.nav li, .footer li{
+  list-style-type: none;
+  text-decoration: none;
+  float:left;
+  padding: 10px;
+  
+}
+
+.techHeader2 {
+  display: none;
+}
+
+/* .navContact{
+  height: 30px;
+} */
+
+.header {
+  height: 350px;
+  margin: 10px;
+  width:40%;
+  float: left;
+  background-color: var(--accent2);
+  margin-left: 7%;
+  
+}
+.tab { margin-left: 70px; }
+
+h2 {
+    font-weight: 900;
+    font-size: 130px;
+    color: var(--accent5);
+    text-shadow: 3px 6px rgb(151, 115, 95);
+    padding-top: 5px;
+    padding-left: 0px;
+    margin: 5px;
+    /* padding: 0px; */
+  
+}
+
+.about {
+  height: 335px;
+  margin: 10px;
+  width:40%;
+  float: right;
+  background-color: var(--accent1);
+  margin-right: 7%;
+  padding-top: 15px;
+  
+  
+}
+
+.about h3 {
+  
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 100;
+}
+
+.layout1 {
+  margin-top: 30px;
+  margin-left: 20px; 
+  width: 60%;
+  height: 400px;
+  background-color: var(--accent3);
+}
+
+
+
+.resume {
+  background-color: var(--accent2);
+  width: 45%;
+  margin-top: 20px;
+  margin-left: 40%;
+  padding:30px;
+  position: relative;
+  font-weight: 100;
+  
+}
+.resume h3, h4 {
+  color: var(--accent6);
+}
+.edu h3, h4 {
+  color: var(--accent6);
+}
+.expHeader {
+  margin-top: 10%;
+  margin-left: 10%; 
+  width: 30%;
+  height: 200px;
+  background-color: var(--accent1);
+  position: absolute;
+  
+}
+
+.expHeader h1{
+  text-align: center;
+  padding-top: 70px;
+  font-weight: 300;
+}
+
+.edu {
+  background-color: var(--accent3);
+  width: 40%;
+  margin-top: 11%;
+  margin-left: 20%;
+  padding:30px;
+  position: relative;
+  font-weight: 100;
+}
+
+.eduHeader {
+  margin-top: 5%;
+  margin-left: 50%; 
+  width: 30%;
+  height: 200px;
+  background-color: var(--accent4);
+  position: absolute;
+  
+}
+
+.eduHeader h1{
+  padding-left: 20px;
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.langHeader {
+  text-align: center;
+}
+
+.langHeader h1, .techHeader h1 {
+  font-weight: 300;
+}
+
+.techHeader {
+  text-align: center;
+}
+
+.skills {
+  height: 200px;
+  margin: 10px;
+  background-color: var(--accent3);
+  padding-top: 10px;
+}
+.tech {
+  height: 200px;
+  margin: 10px;
+  background-color: var(--accent1);
+  padding-top: 10px;
+}
+
+.skills li, .tech li, .now li, .next li {
+  padding: 5px; 
+}
+.langWrap {
+  float:left;
+  width: 300px;
+  margin-left: 27%;
+  margin-top: 5%;
+}
+.techWrap {
+  float:right;
+  width: 300px;
+  margin-right: 27%;
+  margin-top: 5%;
+}
+.layout2 {
+  width: 80%;
+  height: 350px;
+  margin-top: 5%;
+  margin-right:20%;
+  background-color: var(--accent4);
+}
+
+.nowHeader {
+ text-align: center;
+  
+}
+
+.nowHeader h1, .nxtHeader h1, .bookHeader h1{
+  font-weight: 300;
+}
+
+.nxtHeader {
+  text-align: center;
+}
+
+.now {
+  height: 200px;
+  margin: 10px;
+  background-color: var(--accent3);
+  padding-top: 10px;
+}
+
+.next {
+  height: 200px;
+  margin: 10px;
+  background-color: var(--accent1);
+  padding-top: 10px;
+}
+.nowWrap {
+  float:left;
+  width: 300px;
+  margin-left: 27%;
+  margin-top: 5%;
+}
+.nxtWrap {
+  float:right;
+  width: 300px;
+  margin-right: 27%;
+  margin-top: 5%;
+}
+.layout3 {
+  width: 80%;
+  height: 350px;
+  margin-top: 5%;
+  margin-left:20%;
+  background-color: var(--accent4);
+}
+
+.bookHeader {
+  margin-left: 25%; 
+  padding-top: 10px;
+  margin-top: 5%; 
+  width: 300px;
+  height: 250px;
+  background-color: var(--accent1);
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.books {
+  width: 450px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-top: 12%;
+  margin-left:30%;
+  padding-top: 50px;
+  background-color: var(--accent2);
+  
+}
+
+.footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 4rem; 
+  background-color: var(--accent3);
+}
+
+a:link {
+  color: var(--text);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  /* background-color: var(--accent2); */
+  filter: invert(.4);
+  /* padding: 10px; */
+  /* text-decoration: underline; */
+}
+
+a:active {
+  color: var(--text);
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .header h2{
+    font-size: 120px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1360px) {
+  .header h2{
+    font-size: 110px;
+  }
+  
+}
+
+@media screen and (max-width: 1300px) {
+  .langWrap {
+    margin-left: 15%; 
+  }
+  .nxtWrap {
+    margin-right: 15%; 
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .header h2{
+    padding-top: 40px;
+    font-size: 100px;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  .about {
+    height: 400px;
+  }
+  .header {
+    height: 415px;
+  }
+  .layout1 {
+    height: 425px;
+  }
+  .eduHeader h1{
+    padding-top: 0px;
+  }
+  .edu {
+    width: 500px;
+    margin-left: 10%
+  }
+
+}
+
+
+
+@media screen and (max-width: 1040px) {
+  .langWrap {
+    margin-left: 10%; 
+  }
+  .nxtWrap {
+    margin-right: 10%; 
+  }
+  .books{
+    margin-top: 15%; 
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  
+  .tab {
+    margin-left: 300px;
+  }
+  .header h2{
+    padding-left: 100px;
+    padding-top: 0px;
+   
+  }
+  
+  .header {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    float: none;
+    padding-top: 30px;
+  }
+  .about {
+    width: 700px;
+    height: 300px;
+    padding-top: 30px;
+    margin-top: 5%;
+  }
+  .layout1 {
+    margin-top: 10%;
+  }
+
+  .expHeader {
+    height: 150px;
+  }
+  
+  .expHeader h1{
+    padding-top: 30px;
+  }
+
+  .eduHeader {
+    height: 150px;
+  }
+  .edu {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .langWrap {
+    margin-left: 5%; 
+  }
+  .nxtWrap {
+    margin-right: 5%; 
+  }
+  
+}
+
+@media screen and (max-width: 890px) {
+  
+  .expHeader {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  .expHeader h1{
+    padding: 50px;
+  }
+  .resume {
+    width: 93%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .eduHeader {
+    
+    float: left;
+    width:50%;
+    height: 250px;
+    margin: 0;
+    
+  }
+  .eduHeader h1{
+    padding-top: 70px;
+  }
+  .edu {
+    margin: 0;
+    float: right;
+    width:50%;
+    height: 190px;
+  }
+
+  .layout2 {
+    margin-top:40%;
+    width: 100%;
+  }
+  
+  .layout3 {
+    margin-left:0;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .langWrap {
+    margin-left: 55px; 
+    margin-top: 320px;
+  }
+  .techWrap {
+    margin-right: 55px; 
+    margin-top: 67px;
+  }
+  .nxtWrap {
+    margin-right: 55px; 
+  }
+  .nowWrap {
+    margin-left: 55px; 
+  }
+  
+  .bookHeader {
+    margin-left: 0;
+    
+     width:40%;
+    height: 250px;
+  }
+  .books {
+    margin-left: 40%;
+    margin-top: 5%;
+    padding-left: 0;
+    width:60%;
+    height: 210px;
+  }
+
+  .books li {
+    padding-top: 20px;
+  }
+  .bookHeader h1 {
+    padding-top: 30px;
+  } 
+
+}
+
+@media screen and (max-width: 870px) {
+  
+  .header h2{
+    padding-left: 50px;
+  }
+  .layout1 {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 830px) {
+
+  .langWrap {
+    margin-top: 67px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .layout1 {
+    display: none;
+  }
+  .about {
+    width: 100%;
+    margin-left: 0;
+    background-color: var(--accent3);
+    float: none;
+  }
+  .langWrap {
+    margin-top: 30px;
+  }
+  .techWrap {
+    margin-top: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 750px) {
+
+  .header h2{
+    padding-left: 10px;
+  }
+  /* .layout2 {
+    margin-top: 42%;
+  } */
+  .langWrap {
+    margin-left: 20px; 
+  }
+  .techWrap {
+    margin-right: 20px; 
+  }
+  .nxtWrap {
+    margin-right: 20px; 
+  }
+  .nowWrap {
+    margin-left: 20px; 
+  }
+  .layout2 {
+    margin-top: 45%;
+  }
+  .resume {
+    padding: 5px;
+    width: 98.5%;
+  }
+}
+
+
+@media screen and (max-width: 690px) {
+
+  .tab {
+    margin-left: 0;
+  }
+  .header h2{
+    text-align: center;
+  }
+
+  
+}
+@media screen and (max-width: 640px) {
+
+  .langWrap {
+    float: none;
+    margin-top: 65%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .techWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nxtWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nowWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .layout2 {
+    display: none;
+  }
+
+  .layout3 {
+    display: none;
+  }
+
+  .edu {
+    height: 250px;
+  }
+  .eduHeader {
+    height: 310px;
+  }
+
+  .books {
+    margin-top: 37px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .langWrap {
+    
+    margin-top: 75%;
+   
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+  .nav{
+    width: 100%;
+  }
+  .header h2 {
+    
+    font-size: 90px;
+  }
+
+  .about {
+    height: 500px;
+  }
+  
+  .eduHeader {
+    float:none;
+    width:100%;
+    position:relative;
+    height: 150px;
+    text-align: center;
+  }
+  .eduHeader h1{
+    padding-top: 50px;;
+  }
+  .edu {
+    width: 84%;
+    position: relative;
+    margin:0;
+    float: none;
+  }
+
+
+  .langWrap {
+    margin-top: 5%;
+  }
+
+  .bookHeader {
+    margin-top: 5%;
+    padding-top: 20px
+  }
+  .books {
+    margin-top: 29px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    height: 250px;
+  }
+
+}

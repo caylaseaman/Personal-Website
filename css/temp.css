@@ -1,0 +1,572 @@
+:root {
+  
+  --background: #222f59;
+  --textlight: #eff1ed;
+
+
+
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); */
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--textlight);
+  background-repeat: repeat;
+  background-size: 70%;
+  padding-bottom: 20px;
+  padding-top: 70px;
+  font-family: "Lora", serif;;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--textlight);
+  font-family: "Lora", serif;;
+}
+.header {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-top:50px;
+  padding: 150px;
+  text-align: left;
+  overflow-x: hidden;
+  
+}
+
+.header-info {
+  position: absolute;
+  width: 50%;
+
+}
+.header-info h4 {
+  /* position: absolute; */
+  display:flex;
+  margin-bottom: 0px;
+  justify-content: left;
+  font-size: 40px;
+
+}
+.outer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  flex: .5;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+  font-size: 24px;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  left: 20px;
+  bottom: 20px;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+
+ul {
+  list-style-type: circle;
+  font-weight: 100;
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem; 
+  /* background-color: var(--accent); */
+  z-index: 10;
+}
+
+.nav li, .footer li{
+  list-style-type: none;
+  text-decoration: none;
+  float:left;
+  padding: 10px;
+  
+}
+
+
+/* .navContact{
+  height: 30px;
+} */
+
+
+.tab { margin-left: 70px; }
+
+h2 {
+    font-weight: 700;
+    font-size: 130px;
+    font-style: bold;
+    color: var(--secondary);
+    text-shadow: 3px 3px var(--accent);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-left: 70px; */
+    margin: 5px;
+    /* padding: 0px; */
+  
+}
+
+
+
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem; 
+  padding: 0;
+  background-color: var(--accent3);
+}
+
+a:link {
+  color: var(--text);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  /* background-color: var(--accent2); */
+  filter: invert(.4);
+  /* padding: 10px; */
+  /* text-decoration: underline; */
+}
+
+a:active {
+  color: var(--text);
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .header h2{
+    font-size: 120px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1360px) {
+  .header h2{
+    font-size: 110px;
+  }
+  
+}
+
+@media screen and (max-width: 1300px) {
+  .langWrap {
+    margin-left: 15%; 
+  }
+  .nxtWrap {
+    margin-right: 15%; 
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .header h2{
+    padding-top: 40px;
+    font-size: 100px;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  /* .about {
+    height: 400px;
+  } */
+  .header {
+    height: 415px;
+  }
+  .layout1 {
+    height: 425px;
+  }
+  .eduHeader h1{
+    padding-top: 0px;
+  }
+  .edu {
+    width: 500px;
+    margin-left: 10%
+  }
+
+}
+
+
+
+@media screen and (max-width: 1040px) {
+  .langWrap {
+    margin-left: 10%; 
+  }
+  .nxtWrap {
+    margin-right: 10%; 
+  }
+  .books{
+    margin-top: 15%; 
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  
+  .tab {
+    margin-left: 300px;
+  }
+  .header h2{
+    padding-left: 100px;
+    padding-top: 0px;
+   
+  }
+  
+  .header {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    float: none;
+    padding-top: 30px;
+  }
+  .about {
+    /* width: 700px;
+    height: 300px;
+    padding-top: 30px;
+    margin-top: 5%; */
+  }
+  .layout1 {
+    margin-top: 10%;
+  }
+
+  .expHeader {
+    height: 150px;
+  }
+  
+  .expHeader h1{
+    padding-top: 30px;
+  }
+
+  .eduHeader {
+    height: 150px;
+  }
+  .edu {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .langWrap {
+    margin-left: 5%; 
+  }
+  .nxtWrap {
+    margin-right: 5%; 
+  }
+  
+}
+
+@media screen and (max-width: 890px) {
+  
+  .expHeader {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  .expHeader h1{
+    padding: 50px;
+  }
+  .resume {
+    width: 93%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .eduHeader {
+    
+    float: left;
+    width:50%;
+    height: 250px;
+    margin: 0;
+    
+  }
+  .eduHeader h1{
+    padding-top: 70px;
+  }
+  .edu {
+    margin: 0;
+    float: right;
+    width:50%;
+    height: 190px;
+  }
+
+  .layout2 {
+    margin-top:40%;
+    width: 100%;
+  }
+  
+  .layout3 {
+    margin-left:0;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .langWrap {
+    margin-left: 55px; 
+    margin-top: 320px;
+  }
+  .techWrap {
+    margin-right: 55px; 
+    margin-top: 67px;
+  }
+  .nxtWrap {
+    margin-right: 55px; 
+  }
+  .nowWrap {
+    margin-left: 55px; 
+  }
+  
+  .bookHeader {
+    margin-left: 0;
+    
+     width:40%;
+    height: 250px;
+  }
+  .books {
+    margin-left: 40%;
+    margin-top: 5%;
+    padding-left: 0;
+    width:60%;
+    height: 210px;
+  }
+
+  .books li {
+    padding-top: 20px;
+  }
+  .bookHeader h1 {
+    padding-top: 30px;
+  } 
+
+}
+
+@media screen and (max-width: 870px) {
+  
+  .header h2{
+    padding-left: 50px;
+  }
+  .layout1 {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 830px) {
+
+  .langWrap {
+    margin-top: 67px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .layout1 {
+    display: none;
+  }
+  .about {
+    /* width: 100%;
+    margin-left: 0;
+    background-color: var(--accent3);
+    float: none; */
+  }
+  .langWrap {
+    margin-top: 30px;
+  }
+  .techWrap {
+    margin-top: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 750px) {
+
+  .header h2{
+    padding-left: 10px;
+  }
+  /* .layout2 {
+    margin-top: 42%;
+  } */
+  .langWrap {
+    margin-left: 20px; 
+  }
+  .techWrap {
+    margin-right: 20px; 
+  }
+  .nxtWrap {
+    margin-right: 20px; 
+  }
+  .nowWrap {
+    margin-left: 20px; 
+  }
+  .layout2 {
+    margin-top: 45%;
+  }
+  .resume {
+    padding: 5px;
+    width: 98.5%;
+  }
+}
+
+
+@media screen and (max-width: 690px) {
+
+  .tab {
+    margin-left: 0;
+  }
+  .header h2{
+    text-align: center;
+  }
+
+  
+}
+@media screen and (max-width: 640px) {
+
+  .langWrap {
+    float: none;
+    margin-top: 65%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .techWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nxtWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nowWrap {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .layout2 {
+    display: none;
+  }
+
+  .layout3 {
+    display: none;
+  }
+
+  .edu {
+    height: 250px;
+  }
+  .eduHeader {
+    height: 310px;
+  }
+
+  .books {
+    margin-top: 37px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .langWrap {
+    
+    margin-top: 75%;
+   
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+  .nav{
+    width: 100%;
+  }
+  .header h2 {
+    
+    font-size: 90px;
+  }
+
+  /* .about {
+    height: 500px;
+  } */
+  
+  .eduHeader {
+    float:none;
+    width:100%;
+    position:relative;
+    height: 150px;
+    text-align: center;
+  }
+  .eduHeader h1{
+    padding-top: 50px;;
+  }
+  .edu {
+    width: 84%;
+    position: relative;
+    margin:0;
+    float: none;
+  }
+
+
+  .langWrap {
+    margin-top: 5%;
+  }
+
+  .bookHeader {
+    margin-top: 5%;
+    padding-top: 20px
+  }
+  .books {
+    margin-top: 29px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    height: 250px;
+  }
+
+}
