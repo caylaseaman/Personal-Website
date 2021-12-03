@@ -31,9 +31,12 @@ body {
 
 .imageContainer {
   /* margin-right: 20px; */
-  height: 500px;
-  width: 500px;
-  margin: 100px 100px 0px 0px;
+  height: 430px;
+  width: 430px;
+  /* margin: 150px 250px 0px 0px; */
+  /* margin: 5% auto; */
+  /* margin-right: 20%; */
+  margin: 8% 15% 0% 0% ;
 }
 
 img {
@@ -51,16 +54,21 @@ img {
 }
 
 .text {
-  width: 55%;
+  width: 60%;
 }
 
-.header {
-  margin: 200px 0px 0px 150px;
-  font-size: 80px;
-  font-style: italic;
-  font-weight: 300;
+.headerstart {
+  /* margin: auto;
+  margin-top: 25% ; */
+  margin: 25% 0% 0% 25% ;
+  /* width: 50%; */
+  font-size: 96px;
+  font-weight: light;
 }
-
+.headername{
+  margin: 0% 0% 0% 45% ;
+  font-size: 144px;
+}
 .aboutTxt {
   margin-left: 150px;
   font-size: 22px;
@@ -84,113 +92,167 @@ img {
   padding: 10px;
 }
 
-@media screen and (max-width: 1400px) {
-}
 
-@media screen and (max-width: 1360px) {
+
+@media screen and (max-width: 1330px) {
+
+  /* .headerstart {
+    margin: 25% 0% 0% 23% ;
+  }
+  .headername{
+    margin: 0% 0% 0% 43% ;
+  }*/
+  /* .imageContainer {
+    margin: 8% 15% 0% 0%;
+  }   */
+
 }
 
 @media screen and (max-width: 1300px) {
-  .imageContainer {
-    height: 450px;
-    width: 450px;
+
+  .headerstart {
+    margin-left: 20%;
+    
   }
+  .headername{
+    margin-left: 40%;
+  }
+ 
+
 }
 
 @media screen and (max-width: 1180px) {
 
-  .header {
-    margin: 200px 0px 0px 70px;
-    font-size: 70px;
-  }
+
   .imageContainer {
-    margin: 100px 50px 0px 0px;
-  }
-
-  .aboutTxt {
-    margin-left: 70px;
-    font-size: 18px;
-  }
-
+    margin: 8% 10% 0% 0%;
+  }   
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1120px) {
 
+  .headerstart {
+    margin: 30% 0% 0% 15%;
+    
+  }
+  .headername{
+    font-size: 132px;
+  }
+  .imageContainer {
+    /* height: 380px;
+    width: 380px; */
+    margin: 8% 8% 0% 0% ;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+
+  .headerstart {
+    /* margin: 40% 0% 0% 15%; */
+    font-size: 84px;
+  }
+  .headername{
+    font-size: 120px;
+  }
   .imageContainer {
     height: 400px;
     width: 400px;
   }
+  
 }
 
-@media screen and (max-width: 1000px) {
-  .text {
-    width: 50%;
+@media screen and (max-width: 975px) {
+
+  .headerstart {
+    /* margin: 40% 0% 0% 15%; */
+    /* font-size: 72px; */
+  }
+  .headername{
+    /* font-size: 100px; */
+  }
+  .imageContainer {
+    /* height: 380px;
+    width: 380px; */
+    margin: 8% 7% 0% 0% ;
+  }
+
+
+}
+@media screen and (max-width: 950px) {
+
+  .headerstart {
+    /* margin: 40% 0% 0% 15%; */
+    font-size: 80px;
+  }
+  .headername{
+    font-size: 114px;
+  }
+  .imageContainer {
+    height: 380px;
+    width: 380px;
+    /* margin: 8% 7% 0% 0% ; */
   }
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 900px) {
 
-  .header {
-
-    font-size: 60px;
+  .headerstart {
+    /* margin: 45% 0% 0% 20%; */
+    font-size: 72px;
+  }
+  .headername{
+    /* margin: 0% 0% 0% 45%; */
+    font-size: 100px;
+  }
+  .imageContainer {
+    /* margin: 20% 0% 0% 0%; */
+    height: 350px;
+    width: 350px;
   }
   
 }
 
-@media screen and (max-width: 900px) {
-
-  .imageContainer {
-    height: 350px;
-    width: 350px;
-    margin: 150px 50px 0px 0px;
-  }
-/*  */
-}
-
-@media screen and (max-width: 890px) {
-}
-
-@media screen and (max-width: 870px) {
-}
-@media screen and (max-width: 830px) {
-
-  .header {
-
-    font-size: 50px;
-  }
-  .aboutTxt {
-
-    font-size: 17px;
-  }
-}
-
 @media screen and (max-width: 800px) {
-}
 
-@media screen and (max-width: 750px) {
-
-  .header {
-
-    font-size: 45px;
+  .headerstart {
+    font-size: 72px;
   }
-  .aboutTxt {
-
-    font-size: 16px;
+  .headername{
+    font-size: 100px;
   }
+  .imageContainer {
+    margin: 8% 5% 0% 0%;
+    height: 320px;
+    width: 320px;
+  }
+  
 }
+/* @media screen and (max-width: 760px) {
+  body {
+    background-color: #7e7e6b;
+  }
+  .headerstart {
+    font-size: 72px;
+  }
+  .headername{
+    font-size: 100px;
+  }
+  .imageContainer {
+    margin: 8% 5% 0% 0%;
+    height: 300px;
+    width: 300px;
+  }
+  
+} */
 
-@media screen and (max-width: 700px) {
-  /* body {
-    background-color: blue;
-  } */
+@media screen and (max-width: 760px) {
+
   .aboutTxt {
     display: none;
   }
 
     .about {
-
       display: flex;
-
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
     }
     .aboutTxtMin {
@@ -198,49 +260,90 @@ img {
       width: 50%;
       text-align: center;
       align-self: center;
+      font-size: 18px;
     }
     .text {
       width: 100%;
       z-index: 10;
+      
     }
   
-    .header {
-      margin: 0px;
-      font-size: 70px;
-      font-style: italic;
+    .headerstart {
+      margin: 5% 0% 0% 25%;
+      font-size:32px;
       font-weight: 300;
-      text-align: center;
-
+      font-style: italic;
+    }
+    .headername{
+      margin: 0% 0% 0% 30% ;
     }
     .imageContainer {
       width: 100%;
-      margin: 30px 0px 0px 0px;
+      margin: 15px 0px 0px 0px;
+      height: 350px;
+
     }
 }
-@media screen and (max-width: 640px) {
-}
+
 
 @media screen and (max-width: 600px) {
-
   .aboutTxtMin {
     width: 60%;
+  }
+  .headerstart {
+    margin: 5% 0% 0% 20%;
+  }
+  .headername{
+    margin: 0% 0% 0% 25% ;
+  }
+  body {
+    background-color: #7e7e6b;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .header {
-   
-    font-size: 45px;
-    margin-top:130px;
 
-  }
   .aboutTxtMin {
     width: 90%;
+    font-size: 14px;
+  }
+  .headerstart {
+    margin: 15% 0% 0% 20%;
+    font-size:32px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .headername {
+    margin: 0% 0% 0% 30%;
   }
   .imageContainer {
     width: 300px;
     height:300px;
     align-self: center;
-    margin: 35px 0px 10px 0px;
+
   }
+}
+
+@media screen and (max-width: 440px) {
+
+  .headerstart {
+    margin: 5% 0% 0% 15%;
+    font-size:32px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+
+  .headerstart {
+    margin: 5% 0% 0% 10%;
+    font-size:32px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .headername {
+    margin: 0% 0% 0% 20%;
+  }
+ 
 }
