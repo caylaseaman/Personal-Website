@@ -25,53 +25,134 @@ body {
   padding-top: 70px;
   font-family: "Noto Serif Display", serif;
 }
-.aboutTxtMin {
+
+.heroTag {
   display: none;
 }
 
 .imageContainer {
-  /* margin-right: 20px; */
   height: 430px;
   width: 430px;
-  /* margin: 150px 250px 0px 0px; */
-  /* margin: 5% auto; */
-  /* margin-right: 20%; */
   margin: 8% 15% 0% 0% ;
+  position:relative; 
 }
 
-img {
+svg {
+  z-index: 15;
+  margin-top: -15%;
+  position: absolute;
+}
+
+.heroImg {
   border-radius: 50% 50% 0 0;
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: 0 auto;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about {
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12%;
+  /* height: 100vh; */
+}
+
+.headertext {
+  width: 60%;
+}
+
+path {
+  fill: transparent;
+
+}
+
+text {
+  font-size: 25px;
+}
+
+.aboutMe {
   display: flex;
   justify-content: space-between;
   height: 100vh;
 }
 
-.text {
-  width: 60%;
+.aboutLeftPanel {
+  width: 50%;
+}
+
+.aboutRightPanel {
+  width: 50%;
+}
+
+.aboutHeader {
+  margin: 0% 0% 3% 30%;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.aboutTxt {
+  margin: 0% 5% 0% 30%;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.collapsible {
+  border-style: none;
+  /* border-width: thin;
+  border-radius: 5px; */
+  background-color: #e8e3d800;
+  cursor: pointer;
+  margin: 17% 0% 0% 17%;
+  width: 200px;
+  height:30px;
+  text-align: left;
+  /* padding-left: 16px; */
+  font-size: 22px;
+  font-weight: 500;
+  font-family : inherit;
+    /* font-size: 1em; */
+}
+
+.active, .collapsible:hover {
+  /* background-color: rgb(247, 222, 222); */
+}
+
+.collapsible:after {
+  content: '\002B';
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  font-family : inherit;
+  content: "\2212";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 70%;
+  margin: 2% 0% 0% 18%;
+  font-weight: 300;
+}
+
+.edu {
+  margin: 3% 0% 0% 17%;
 }
 
 .headerstart {
-  /* margin: auto;
-  margin-top: 25% ; */
   margin: 25% 0% 0% 25% ;
-  /* width: 50%; */
   font-size: 96px;
-  font-weight: light;
+  font-weight: 300;
 }
+
 .headername{
   margin: 0% 0% 0% 45% ;
   font-size: 144px;
-}
-.aboutTxt {
-  margin-left: 150px;
-  font-size: 22px;
 }
 
 .nav {
@@ -92,20 +173,10 @@ img {
   padding: 10px;
 }
 
-
-
-@media screen and (max-width: 1330px) {
-
-  /* .headerstart {
-    margin: 25% 0% 0% 23% ;
-  }
-  .headername{
-    margin: 0% 0% 0% 43% ;
-  }*/
-  /* .imageContainer {
-    margin: 8% 15% 0% 0%;
-  }   */
-
+ul.no-bullets {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -117,19 +188,15 @@ img {
   .headername{
     margin-left: 40%;
   }
- 
+  .aboutHeader {
+    font-size: 64px;
+  }
+
 
 }
+
 
 @media screen and (max-width: 1180px) {
-
-
-  .imageContainer {
-    margin: 8% 10% 0% 0%;
-  }   
-}
-
-@media screen and (max-width: 1120px) {
 
   .headerstart {
     margin: 30% 0% 0% 15%;
@@ -138,17 +205,25 @@ img {
   .headername{
     font-size: 132px;
   }
+
   .imageContainer {
-    /* height: 380px;
-    width: 380px; */
-    margin: 8% 8% 0% 0% ;
+    margin: 8% 8% 0% 0%;
+  }   
+  .aboutTxt {
+    font-size: 20px;
   }
+  .collapsible {
+    margin: 19% 0% 0% 17%;
+  }
+  .edu {
+    margin: 3% 0% 0% 17%;
+  }
+
 }
 
 @media screen and (max-width: 1040px) {
 
   .headerstart {
-    /* margin: 40% 0% 0% 15%; */
     font-size: 84px;
   }
   .headername{
@@ -162,20 +237,23 @@ img {
 }
 
 @media screen and (max-width: 975px) {
-
-  .headerstart {
-    /* margin: 40% 0% 0% 15%; */
-    /* font-size: 72px; */
-  }
-  .headername{
-    /* font-size: 100px; */
-  }
   .imageContainer {
-    /* height: 380px;
-    width: 380px; */
     margin: 8% 7% 0% 0% ;
   }
-
+  .collapsible {
+    margin: 27% 0% 0% 17%;
+  }
+  .edu {
+    margin: 3% 0% 0% 17%;
+  }
+  .aboutLeftPanel {
+    width: 60%;
+  }
+  
+  .aboutRightPanel {
+    width: 40%;
+  }
+ 
 
 }
 @media screen and (max-width: 950px) {
@@ -192,6 +270,7 @@ img {
     width: 380px;
     /* margin: 8% 7% 0% 0% ; */
   }
+
 }
 @media screen and (max-width: 900px) {
 
@@ -208,11 +287,17 @@ img {
     height: 350px;
     width: 350px;
   }
-  
+  .collapsible {
+    margin: 30% 0% 0% 17%;
+  }
+  .edu {
+    margin: 3% 0% 0% 17%;
+  }
+ 
 }
 
 @media screen and (max-width: 800px) {
-
+  
   .headerstart {
     font-size: 72px;
   }
@@ -224,7 +309,9 @@ img {
     height: 320px;
     width: 320px;
   }
-  
+  /* body {
+    background-color: #7e7e6b;
+  } */
 }
 /* @media screen and (max-width: 760px) {
   body {
@@ -246,28 +333,26 @@ img {
 
 @media screen and (max-width: 760px) {
 
-  .aboutTxt {
-    display: none;
-  }
-
-    .about {
+    .hero {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
     }
-    .aboutTxtMin {
+    .heroTag {
       display: inline;
       width: 50%;
       text-align: center;
       align-self: center;
       font-size: 18px;
     }
-    .text {
+    .headertext {
       width: 100%;
       z-index: 10;
       
     }
-  
+    svg {
+      display: none;
+    }
     .headerstart {
       margin: 5% 0% 0% 25%;
       font-size:32px;
@@ -283,11 +368,41 @@ img {
       height: 350px;
 
     }
+
+.aboutMe {
+  display: inline;
+
+}
+.aboutLeftPanel {
+  width: 100%;
+}
+
+.aboutRightPanel {
+  width: 100%;
+}
+.collapsible {
+  margin: 5% 0% 0% 15%;
+  padding: 0%;
+}
+.edu {
+  margin: 3% 0% 0% 15%;
+}
+.aboutHeader {
+  margin: 0% 0% 0% 15%;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.aboutTxt {
+  margin: 0% 15% 0% 15%;
+  font-size: 22px;
+  font-weight: 300;
+}
 }
 
 
 @media screen and (max-width: 600px) {
-  .aboutTxtMin {
+  .heroTag {
     width: 60%;
   }
   .headerstart {
@@ -296,14 +411,12 @@ img {
   .headername{
     margin: 0% 0% 0% 25% ;
   }
-  body {
-    background-color: #7e7e6b;
-  }
+
 }
 
 @media screen and (max-width: 480px) {
 
-  .aboutTxtMin {
+  .heroTag {
     width: 90%;
     font-size: 14px;
   }
@@ -314,13 +427,26 @@ img {
     font-style: italic;
   }
   .headername {
-    margin: 0% 0% 0% 30%;
+    margin: 0% 0% 0% 25%;
   }
   .imageContainer {
     width: 300px;
     height:300px;
     align-self: center;
 
+  }
+  .collapsible {
+    margin: 5% 0% 0% 10%;
+  }
+  .edu {
+    margin: 3% 0% 0% 10%;
+  }
+  .aboutHeader {
+    margin: 0% 0% 0% 10%;
+  }
+  .aboutTxt {
+    margin: 0% 10% 0% 10%;
+    font-size:18px;
   }
 }
 
