@@ -42,24 +42,55 @@
     </ul>
 
   </div>
-  <div class="columns about">
-    <div class="column text">
-      <h1 class="header">Hi, I'm Cayla.</h1>
-      <p class="aboutTxt">I recently graduated from <b>Purdue University</b> with a major in Computer Science as well as
+  <div class="hero">
+    <div class="headertext">
+      <h1 class="headerstart">Hi, I'm </h1>
+      <h1 class="headername">Cayla</h1>
+      <!-- <p class="aboutTxt">I recently graduated from <b>Purdue University</b> with a major in Computer Science as well as
         a minor in Innovation and
         Transformational Change. Currently, I'm working as a <b>Software Consultant</b> for <b>Pariveda Solutions</b>.
-      </p>
+      </p> -->
     </div>
 
-    <div class="column imageContainer">
-      <img src="Assets/cayla.jpg" alt="Avatar">
+    <div class="imageContainer">
+      <svg viewBox="0 0 500 150">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+          <textPath xlink:href="#curve">
+            Software Developer & Consultant
+          </textPath>
+        </text>
+      </svg>
+      <img class="heroImg" src="Assets/cayla.jpg" alt="Avatar">
     </div>
-    <p class="aboutTxtMin">I recently graduated from <b>Purdue University</b> with a major in Computer Science as well as
-      a minor in Innovation and
-      Transformational Change. Currently, I'm working as a <b>Software Consultant</b> for <b>Pariveda Solutions</b>.
-    </p>
+    <p class="heroTag">Software Developer & Consultant</p>
+  </div>
+<div class="aboutMe">
+  <div class="aboutLeftPanel">
+    <h1 class="aboutHeader">About Me</h1>
+    <p class="aboutTxt">I’m a fullstack developer located in Seattle. I have always had a passion for human-centric design and continuous improvement. Recently, I’ve been working towards an AWS Solution Architect Certification and playing around with Figma plugins. <br></br>I’m currently implementing software solutions to meet stakeholder needs at <b>Pariveda</b>, a tech consulting firm.</p>
+  </div>
+  <div class="aboutRightPanel">
+     
+      <button type="button" class="collapsible">Experience</button>
+      <div class="content">
+          <ul class="no-bullets">
+              <li><b>Pariveda Solutions</b> &ensp; Aug 2021 - present</li>
+              <li><b>Discover Financial Services</b> &ensp; 2019 - 2020</li>
+          </ul>
+      </div>
+      <button type="button" class="collapsible edu">Education</button>
+      <div class="content">
+        <span><b>Purdue University</b> &ensp; Class of 2021</span>
+        <ul class="no-bullets">
+          <li>Major: Computer Science</li>
+          <li>Minor: Innovation and Transformational Change</li>
+        </ul>
+      </div>
+       
   </div>
 
+</div>
 
   <!-- 
   <div class="books">
@@ -77,7 +108,7 @@
           <li style="float:right"><a href="https://github.com/caylaseaman" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/github-2.png"/></a></li>
         </ul>
   </div> -->
-
+<script src="js/index.js"></script>
 </body>
 
 </html>
