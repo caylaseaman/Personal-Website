@@ -12,12 +12,10 @@
   /* rgb(126, 126, 107); */
   --accent7: #cb997e;
 }
-
 body {
   margin: 0;
   scroll-behavior: smooth;
   background-color: #e8e3d8;
-  /* #122220; */
   color: black;
   background-repeat: repeat;
   background-size: 70%;
@@ -57,7 +55,6 @@ svg {
   display: flex;
   justify-content: space-between;
   padding-bottom: 12%;
-  /* height: 100vh; */
 }
 
 .headertext {
@@ -76,7 +73,8 @@ text {
 .aboutMe {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  padding-bottom: 12%;
+  /* height: 100vh; */
 }
 
 .aboutLeftPanel {
@@ -98,26 +96,21 @@ text {
   font-size: 22px;
   font-weight: 300;
 }
-
+button {
+  color: black;
+  border: 1px solid black;
+}
 .collapsible {
   border-style: none;
-  /* border-width: thin;
-  border-radius: 5px; */
   background-color: #e8e3d800;
   cursor: pointer;
   margin: 17% 0% 0% 17%;
   width: 200px;
   height:30px;
   text-align: left;
-  /* padding-left: 16px; */
   font-size: 22px;
   font-weight: 500;
   font-family : inherit;
-    /* font-size: 1em; */
-}
-
-.active, .collapsible:hover {
-  /* background-color: rgb(247, 222, 222); */
 }
 
 .collapsible:after {
@@ -154,6 +147,37 @@ text {
   margin: 0% 0% 0% 45% ;
   font-size: 144px;
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  /* height: 100vh; */
+}
+.contactContent {
+  text-align: center;
+  width: 45%;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 5% 0% 5% 0%;
+}
+.contactHeader {
+  margin: 0% 0% 3% 0%;
+  font-size: 72px;
+  font-weight: 400;
+}
+.contactTxt {
+  margin: 0% 20% 0% 20%;
+  font-size: 22px;
+  font-weight: 300;
+}
+.contactButton {
+  margin-top: 5%;
+  padding: 10px 30px;
+  border-radius: 25px;
+  background-color: #e8e3d800;
+  cursor: pointer;
+  font-family: inherit;
+}
 
 .nav {
   position: fixed;
@@ -163,22 +187,27 @@ text {
   height: 4rem;
   z-index: 20;
   background-color: #e8e3d8;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .nav li,
 .footer li {
   list-style-type: none;
-  text-decoration: none;
   padding: 10px;
 }
 
 ul.no-bullets {
   list-style-type: none; 
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
+@media screen and (min-width: 1700px) {
 
+  .imageContainer {
+    margin: 10% 20% 0% 0%;
+  }   
+
+}
 @media screen and (max-width: 1300px) {
 
   .headerstart {
@@ -189,6 +218,9 @@ ul.no-bullets {
     margin-left: 40%;
   }
   .aboutHeader {
+    font-size: 64px;
+  }
+  .contactHeader {
     font-size: 64px;
   }
 
@@ -210,6 +242,9 @@ ul.no-bullets {
     margin: 8% 8% 0% 0%;
   }   
   .aboutTxt {
+    font-size: 20px;
+  }
+  .contactTxt {
     font-size: 20px;
   }
   .collapsible {
@@ -234,6 +269,7 @@ ul.no-bullets {
     width: 400px;
   }
   
+  
 }
 
 @media screen and (max-width: 975px) {
@@ -253,7 +289,9 @@ ul.no-bullets {
   .aboutRightPanel {
     width: 40%;
   }
- 
+  .content {
+    font-size: 16px;
+  }
 
 }
 @media screen and (max-width: 950px) {
@@ -271,19 +309,17 @@ ul.no-bullets {
     /* margin: 8% 7% 0% 0% ; */
   }
 
+
 }
 @media screen and (max-width: 900px) {
 
   .headerstart {
-    /* margin: 45% 0% 0% 20%; */
     font-size: 72px;
   }
-  .headername{
-    /* margin: 0% 0% 0% 45%; */
+  .headername {
     font-size: 100px;
   }
   .imageContainer {
-    /* margin: 20% 0% 0% 0%; */
     height: 350px;
     width: 350px;
   }
@@ -293,7 +329,13 @@ ul.no-bullets {
   .edu {
     margin: 3% 0% 0% 17%;
   }
- 
+  .contactContent {
+    width: 60%;
+  }
+  .contentTxt {
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -309,27 +351,8 @@ ul.no-bullets {
     height: 320px;
     width: 320px;
   }
-  /* body {
-    background-color: #7e7e6b;
-  } */
+ 
 }
-/* @media screen and (max-width: 760px) {
-  body {
-    background-color: #7e7e6b;
-  }
-  .headerstart {
-    font-size: 72px;
-  }
-  .headername{
-    font-size: 100px;
-  }
-  .imageContainer {
-    margin: 8% 5% 0% 0%;
-    height: 300px;
-    width: 300px;
-  }
-  
-} */
 
 @media screen and (max-width: 760px) {
 
@@ -398,6 +421,13 @@ ul.no-bullets {
   font-size: 22px;
   font-weight: 300;
 }
+.contact{
+  padding-top: 12%;
+}
+.contactContent {
+  width: 70%;
+}
+
 }
 
 
@@ -410,6 +440,12 @@ ul.no-bullets {
   }
   .headername{
     margin: 0% 0% 0% 25% ;
+  }
+  .contactHeader {
+    font-size:54px;
+  }
+  .contactTxt {
+    font-size:18px;
   }
 
 }
@@ -448,6 +484,8 @@ ul.no-bullets {
     margin: 0% 10% 0% 10%;
     font-size:18px;
   }
+
+
 }
 
 @media screen and (max-width: 440px) {
@@ -470,6 +508,27 @@ ul.no-bullets {
   }
   .headername {
     margin: 0% 0% 0% 20%;
+  }
+
+  @media screen and (max-width: 330px) {
+
+    .headername {
+      font-size: 82px;
+    }
+    .aboutHeader, .contactHeader {
+      font-size: 54px;
+    }
+    .contactContent {
+      width: 80%;
+    }
+    .aboutTxt{
+      font-size: 16px;
+    }
+    .contactTxt {
+      font-size: 14px;
+      padding-bottom: 5px;
+    }
+
   }
  
 }
